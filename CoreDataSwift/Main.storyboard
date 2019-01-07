@@ -12,7 +12,7 @@
         <!--Authors-->
         <scene sceneID="nll-gA-DCO">
             <objects>
-                <tableViewController id="JhQ-g5-a3J" customClass="MainViewController" customModule="CoreDataSwift" sceneMemberID="viewController">
+                <tableViewController id="JhQ-g5-a3J" customClass="MasterViewController" customModule="CoreDataSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qx0-GJ-tto">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		7414AFF521D6CFE300975ABA /* AddNewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414AFF421D6CFE300975ABA /* AddNewBookViewController.swift */; };
 		7414AFF721D7E59E00975ABA /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414AFF621D7E59E00975ABA /* EditingViewController.swift */; };
-		7433C35721C30407000C13CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0335721A864480006E523 /* MainViewController.swift */; };
+		7433C35721C30407000C13CA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0335721A864480006E523 /* MasterViewController.swift */; };
 		743F7FF621DD854E000E4D31 /* CoreDataSwift.CDBStore in Resources */ = {isa = PBXBuildFile; fileRef = 743F7FF321DD854E000E4D31 /* CoreDataSwift.CDBStore */; };
 		743F7FF721DD854E000E4D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743F7FF421DD854E000E4D31 /* Assets.xcassets */; };
+		74A8E98B21E2EB2500471712 /* CoreDataSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74A8E98921E2EB2500471712 /* CoreDataSwift.xcdatamodeld */; };
 		74DADDB821A9E64B0051B7EC /* ShowSelectedBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DADDB721A9E64B0051B7EC /* ShowSelectedBookViewController.swift */; };
 		74E0333721A855A50006E523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E0333621A855A50006E523 /* AppDelegate.swift */; };
 		74E0334F21A858A00006E523 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E0334E21A858A00006E523 /* CoreData.framework */; };
@@ -26,15 +27,14 @@
 		743F7FF121DD59A6000E4D31 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		743F7FF321DD854E000E4D31 /* CoreDataSwift.CDBStore */ = {isa = PBXFileReference; lastKnownFileType = file; name = CoreDataSwift.CDBStore; path = CoreDataSwift/CoreDataSwift.CDBStore; sourceTree = SOURCE_ROOT; };
 		743F7FF421DD854E000E4D31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CoreDataSwift/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		74A8E98A21E2EB2500471712 /* CoreDataSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataSwift.xcdatamodel; sourceTree = "<group>"; };
 		74DADDB721A9E64B0051B7EC /* ShowSelectedBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSelectedBookViewController.swift; sourceTree = "<group>"; };
 		74E0333321A855A50006E523 /* CoreDataSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E0333621A855A50006E523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74E0334521A855B40006E523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E0334E21A858A00006E523 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		74E0335021A859A40006E523 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		74E0335721A864480006E523 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		74EAE66E21DD88BB008422C5 /* CoreDataBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBooks.xcdatamodel; sourceTree = "<group>"; };
-		74EAE67621DD8B67008422C5 /* CoreDataBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBooks.xcdatamodel; sourceTree = "<group>"; };
+		74E0335721A864480006E523 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		74EAE67921DD8D02008422C5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CoreDataSwift/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		74EAE67A21DD8D02008422C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = CoreDataSwift/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -56,7 +56,7 @@
 			children = (
 				7414AFF421D6CFE300975ABA /* AddNewBookViewController.swift */,
 				7414AFF621D7E59E00975ABA /* EditingViewController.swift */,
-				74E0335721A864480006E523 /* MainViewController.swift */,
+				74E0335721A864480006E523 /* MasterViewController.swift */,
 				74DADDB721A9E64B0051B7EC /* ShowSelectedBookViewController.swift */,
 			);
 			name = "View Controllers";
@@ -111,7 +111,6 @@
 		74E0334D21A8589F0006E523 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				74EAE66D21DD88BB008422C5 /* CoreDataSwift.xcdatamodeld */,
 				74E0334E21A858A00006E523 /* CoreData.framework */,
 			);
 			name = Frameworks;
@@ -122,9 +121,9 @@
 			children = (
 				74EAE67921DD8D02008422C5 /* LaunchScreen.storyboard */,
 				74EAE67A21DD8D02008422C5 /* Main.storyboard */,
-				74EAE67521DD8B67008422C5 /* CoreDataSwift.xcdatamodeld */,
 				743F7FF421DD854E000E4D31 /* Assets.xcassets */,
 				743F7FF321DD854E000E4D31 /* CoreDataSwift.CDBStore */,
+				74A8E98921E2EB2500471712 /* CoreDataSwift.xcdatamodeld */,
 			);
 			name = Resources;
 			path = CoreDataBooksSwift;
@@ -205,9 +204,10 @@
 				74E0335221A859A40006E523 /* Book.swift in Sources */,
 				7414AFF521D6CFE300975ABA /* AddNewBookViewController.swift in Sources */,
 				74DADDB821A9E64B0051B7EC /* ShowSelectedBookViewController.swift in Sources */,
+				74A8E98B21E2EB2500471712 /* CoreDataSwift.xcdatamodeld in Sources */,
 				7414AFF721D7E59E00975ABA /* EditingViewController.swift in Sources */,
 				74E0333721A855A50006E523 /* AppDelegate.swift in Sources */,
-				7433C35721C30407000C13CA /* MainViewController.swift in Sources */,
+				7433C35721C30407000C13CA /* MasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,24 +392,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		74EAE66D21DD88BB008422C5 /* CoreDataSwift.xcdatamodeld */ = {
+		74A8E98921E2EB2500471712 /* CoreDataSwift.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				74EAE66E21DD88BB008422C5 /* CoreDataBooks.xcdatamodel */,
+				74A8E98A21E2EB2500471712 /* CoreDataSwift.xcdatamodel */,
 			);
-			currentVersion = 74EAE66E21DD88BB008422C5 /* CoreDataBooks.xcdatamodel */;
+			currentVersion = 74A8E98A21E2EB2500471712 /* CoreDataSwift.xcdatamodel */;
 			name = CoreDataSwift.xcdatamodeld;
-			path = CoreDataSwift/CoreDataSwift.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		74EAE67521DD8B67008422C5 /* CoreDataSwift.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				74EAE67621DD8B67008422C5 /* CoreDataBooks.xcdatamodel */,
-			);
-			currentVersion = 74EAE67621DD8B67008422C5 /* CoreDataBooks.xcdatamodel */;
-			path = CoreDataSwift.xcdatamodeld;
+			path = ../CoreDataSwift/CoreDataSwift.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

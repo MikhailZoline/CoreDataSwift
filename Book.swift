@@ -1,6 +1,6 @@
 //
 //  Book+CoreDataClass.swift
-//  CoreDataBooksSwift
+//  CoreDataSwift
 //
 //  Created by Mikhail Zoline on 11/23/18.
 //  Copyright © 2018 MZ. All rights reserved.

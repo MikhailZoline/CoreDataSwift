@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = rootNavigationController
         // Configure View Controller
         if( rootNavigationController != nil ){
-            guard let rootViewController: MainViewController = rootNavigationController?.topViewController as? MainViewController else{
+            guard let rootViewController: MasterViewController = rootNavigationController?.topViewController as? MasterViewController else{
                 // fatalError() causes the application to generate a crash log and terminate.
                 // It may be useful during development.
                 fatalError("\(#function): \(#line)")

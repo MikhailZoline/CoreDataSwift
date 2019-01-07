@@ -1,7 +1,7 @@
 
 <h1 align="center">
 <b>Core Data with Swift 4.2</b>
-   <br><img width="275" height="500" src="https://user-images.githubusercontent.com/16679908/50730413-2c81bd00-111b-11e9-9053-7d1c2e82e615.gif">
+   <br><img width="275" height="500" src="https://user-images.githubusercontent.com/16679908/50746603-d5084d80-11fd-11e9-86fe-125a85868835.gif">
 </h1>
 
 This demo illustrates a number of aspects of working with the Core Data framework in Swift 4.2

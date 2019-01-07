@@ -1,12 +1,12 @@
 //
-//  MainViewController.swift
+//  MasterViewController.swift
 /*  The table view controller responsible for displaying the list of books,
     supporting additional functionality:
     Display detailed information about a selected book using an instance of ShowSelectedBookViewController
     Add a new book using an instance of AddNewBookViewController
     Deletion of existing books using UITableView's tableView:commitEditingStyle:forRowAtIndexPath: method.
 
-    The MainViewController creates and configures an instance of
+    The MasterViewController creates and configures an instance of
     NSFetchedResultsController to manage the collection of books.
     The view controller's managed object context is supplied by the application's delegate.
     When the user adds a new book, the MainViewController creates
@@ -24,7 +24,7 @@ import CoreData
 
 //MARK: -
 
-class MainViewController: UITableViewController, NSFetchedResultsControllerDelegate, AddNewBookViewControllerDelegate {
+class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate, AddNewBookViewControllerDelegate {
     
     var managedObjectContext: NSManagedObjectContext?
     var rightBarButtonItem: UIBarButtonItem?
