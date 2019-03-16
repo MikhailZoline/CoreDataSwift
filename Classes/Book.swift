@@ -12,7 +12,9 @@ import CoreData
 import Foundation
 
 //(Book)
-@objc public class Book: NSManagedObject {
+//@objc public class Book: NSManagedObject
+@objc(Book) class Book: NSManagedObject
+{
     
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Book> {
         return NSFetchRequest<Book>(entityName: "Book")
